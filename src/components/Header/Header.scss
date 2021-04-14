@@ -1,0 +1,15 @@
+.nav {
+    border-right: 1px solid white;
+    padding: 0 12px;
+}
+ul {
+    list-style: none;
+}
+
+.nav__link {
+    color: white;
+    text-decoration: none;
+    &--active {
+        color: blue;
+    }
+}
