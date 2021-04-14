@@ -1,0 +1,47 @@
+$background-color: #15202B;
+$twitter-secondary-color: #8899a6;
+
+.post {
+    display: flex;
+    padding: 12px 16px;
+    border-bottom: 1px solid $twitter-secondary-color;
+    .post__img-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 9999px;
+        width: 48px;
+        height: 100%;
+        margin-right: 12px;
+        .post__img {
+            padding-bottom: 100%;
+            background-image: url('https://pbs.twimg.com/profile_images/914570852770959362/HAbvWEop_400x400.jpg');
+            background-position: bottom center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    .post__main {
+        width: 100%;
+        .post__header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .post__username {
+                display: inline-block;
+                margin-right: 5px;
+            }
+            .btn--icon {
+                color: $twitter-secondary-color;
+            }
+        }
+    }
+    .post__footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 12px;
+        max-width: 425px;
+        .post__stats {
+            padding: 7px;
+        }
+    }
+}

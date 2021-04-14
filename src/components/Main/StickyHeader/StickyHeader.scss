@@ -1,0 +1,27 @@
+$background-color: #15202B;
+$twitter-default-font-color: #1da1f2;
+$medium-blue: #32465a;
+
+.sticky-header {
+    display: flex;
+    align-items: center;
+    height: 53px;
+    background-color: $background-color;
+    padding: 0 16px;
+    border-bottom: 1px solid $medium-blue;
+    .sticky-header__icon-wrapper {
+        min-width: 56px;
+        color: $twitter-default-font-color;
+        .sticky-header__icon {
+            display: flex;
+            min-width: 40px;
+            min-height: 40px;
+            align-items: center;
+            justify-content: center;
+            margin-left: calc(4px + (-1 * (60px)) / 2);
+        }
+    }
+    .text--highlight {
+        font-size: 0.8rem;
+    }
+}

@@ -1,0 +1,29 @@
+$twitter-default-font-color: #1da1f2;
+$twitter-secondary-color: #8899a6;
+
+.posts {
+    .posts__tabs-wrapper {
+        border-bottom: 1px solid $twitter-secondary-color;
+        .posts__tabs {
+            display: flex;
+            justify-content: space-evenly;
+            .posts__tab {
+                padding: 12px;
+                font-weight: 700;
+                line-height: 1.4em;
+                width: 100%;
+                text-align: center;
+                cursor: pointer;
+                transition: 0.2s;
+                &--active {
+                    color: $twitter-default-font-color;
+                    border-bottom: 2px solid $twitter-default-font-color;
+                }
+                &:hover, &:focus {
+                    background-color: rgba(29, 161, 242, 0.1);
+                    color: $twitter-default-font-color;
+                }
+            }
+        }
+    }
+}

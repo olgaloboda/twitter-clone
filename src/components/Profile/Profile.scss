@@ -1,0 +1,19 @@
+$twitter-default-font-color: #1da1f2;
+$light-grey: #ebebeb;
+
+$medium-blue: #32465a;
+
+.main-wrapper {
+    width: 990px;
+    display: flex;
+    .main__feed-wrapper {
+        max-width: 600px;
+        min-height: 100vh;
+        width: 100%;
+    }
+    .main__summary-wrapper {
+        width: 350px;
+        border-left: 1px solid $medium-blue;
+        min-height: 100vh;
+    }
+}

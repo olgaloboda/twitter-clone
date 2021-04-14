@@ -1,6 +1,8 @@
+$background-color: #15202B;
+
 .app-wrapper {
   display: flex;
-  background-color: #15202B;
+  background-color: $background-color;
   color: white;
   font-size: 16px;
   min-height: 100vh;

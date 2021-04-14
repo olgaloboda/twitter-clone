@@ -1,5 +1,16 @@
-body {
+$font-family: 'Font Awesome 5 Free', sans-serif;
+
+$twitter-default-font-color: #1da1f2;
+$twitter-secondary-color: #8899a6;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
+}
+
+body {
+  margin: 0 auto;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -7,7 +18,86 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+h2 {
+  font-weight: 900;
+  font-size: 1.25rem;  
+  line-height: 1.2em;
+  letter-spacing: -0.2px;        
+}
+
+h3 {
+}
+
+h4 {
+  font-weight: 800;
+}
+
+p {
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.2em;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  display: inline-block;
+  background-color: transparent;
+  border: 0;
+  border-radius: 9999px;
+  font-weight: 800;
+  font-size: 0.9rem;
+  padding: 12px;
+  transition: 0.2s;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+}
+
+a {
+  color: $twitter-default-font-color;
+  text-decoration: none;
+  font-weight: 500;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.btn--default {
+  background-color: $twitter-default-font-color;
+  color: white;
+  &:hover, &:focus {
+    background-color: darken($twitter-default-font-color, 3%);
+  }
+}
+
+
+.btn--outline {
+  border: 1px solid $twitter-default-font-color;
+  color: $twitter-default-font-color;
+  &:hover, &:focus {
+    background-color: rgba(29, 161, 242, 0.1);
+  }
+}
+
+.btn--icon {
+  padding: 0;
+}
+
+.text--highlight {
+  color: $twitter-secondary-color;
+  font-size: 1rem;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.emoji-icon {
+  height: 18px;
+  display: inline-block;
+  vertical-align: middle;
 }

@@ -2,9 +2,13 @@ import h from './Home.module.scss';
 
 const Home = () => {
     return(
-        <section>
-            home
-        </section>
+        <div className="main-wrapper">
+            <article className="main__feed-wrapper">
+                home
+            </article>
+            <article className="main__summary-wrapper">
+            </article>
+        </div>
     );
 }
 

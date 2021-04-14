@@ -2,9 +2,9 @@ import './Summary.scss';
 
 const Summary = () => {
     return(
-        <article className="profile-summary">
+        <section className="main__summary">
             Summary
-        </article>
+        </section>
     );
 }
 
